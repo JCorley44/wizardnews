@@ -7,7 +7,8 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.static("public"));
 
-const PORT = process.env.PORT || 1337;
+//new comment
+const { PORT = 1337 } = process.env;
 //displaying the posts
 app.get("/", (req, res) => {
   //making a list
